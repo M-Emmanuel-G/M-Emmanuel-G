@@ -81,7 +81,7 @@ body{
 
 .login input:hover{
     transition: .4s;
-    border-bottom: 3px solid #fff; 
+    border-bottom: 1px solid #fff; 
 }
 
 .login input:focus{

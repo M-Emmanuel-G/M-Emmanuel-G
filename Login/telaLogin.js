@@ -1,16 +1,17 @@
 function login(){
     var nome = document.getElementById('email');
     var senha = document.getElementById('senha');
-    if (nome.value == ""){
-        alert("Usuario nao informado")
+    if (nome.value != "admin"){
+        alert("Usuario nao Cadastrado")
     }
     else
-    if(senha.value == ""){
-        alert("Senha nao informada")
+    if(senha.value != "admin"){
+        alert("Senha de invalida")
     }
 
     else{
         alert("Usuario logado")
+        location.href='TelaInicial.html'
     }
     
 }
