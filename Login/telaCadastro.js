@@ -1,9 +1,9 @@
 function cadastrar(){
-    var nome = document.getElementById('nome') 
-    var usuario = document.getElementById('usuario') 
-    var email = document.getElementById('email1') 
-    var senha1 = document.getElementById('senha1') 
-    var senha2 = document.getElementById('senha2') 
+    let nome = document.getElementById('nome') 
+    let usuario = document.getElementById('usuario') 
+    let email = document.getElementById('email1') 
+    let senha1 = document.getElementById('senha1') 
+    let senha2 = document.getElementById('senha2') 
 
     if(nome.value == ""){
         alert('Digite seu nome completo')
