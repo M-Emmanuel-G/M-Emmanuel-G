@@ -3,9 +3,14 @@ function voltar(){
     location.href="index.html"
 }
 
-function calculo(){
-    let num1 =document.getElementById("number1")
-    let num2 = document.getElementById("number2")
-    let resultado = parseInt(num1.value) / parseInt(num2.value)
-    document.querySelector('.display').innerHTML = resultado
-}
+function salvarTexto(){
+    let btn = document.getElementById("btnSalvar")
+    let display = document.querySelector('#input').value
+    document.querySelector('.display').innerHTML = display
+    if(btn === onclick){
+        alert("DSFds")
+    }
+    let nomes = [
+        {id:1}
+    ]
+}   

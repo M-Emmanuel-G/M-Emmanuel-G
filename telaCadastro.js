@@ -4,7 +4,9 @@ function cadastrar(){
     let email = document.getElementById('email1') 
     let senha1 = document.getElementById('senha1') 
     let senha2 = document.getElementById('senha2') 
+    let nomesCadastrados = [{}]
 
+    
     if(nome.value == ""){
         alert('Digite seu nome completo')
     }
@@ -38,6 +40,10 @@ function cadastrar(){
             container.style.display = 'none';
         }
      }    
+
+     nomesCadastrados = nome.value
+
+    console.log(nomesCadastrados)
 }
 
 function voltar(){

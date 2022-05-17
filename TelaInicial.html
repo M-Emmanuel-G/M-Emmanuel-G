@@ -5,27 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
+    <script src="./main.js" defer></script>
     <title>Pagina Inicial</title>
 </head>
 <body>
     <div class="container">
-      <div class="main">
-        <div class="box1">
-            <div class="inputs">
-                <label for="">Largura</label>
-                <input id="number1" type="text">
-                <label for="">comprimento</label>
-                <input id="number2" type="text"> 
-            </div>      
-            <div class="display"></div>
+        <div class="main">
+            <h1>Digite uma palavra</h1>
+            <div class="texto">
+                <input type="text" id="input">
+            </div>
+            <div id="display" class="display"></div>
+            <button class="btns b1" id="btnSalvar" onclick="salvarTexto()">Salvar</button>
+            <button class="btns b2" onclick="voltar()">Voltar</button>
         </div>
-        <div class="box2">
-            <button onclick="calculo()">Calcular</button>
-            <button onclick="voltar()">Sair</button>
-        </div>
-      </div>
-    </div>
-
-    <script src="./main.js"></script>
+      
+    </div>    
 </body>
 </html>

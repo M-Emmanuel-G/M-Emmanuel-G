@@ -1,12 +1,13 @@
 function login(){
-    var nome = document.getElementById('email');
-    var senha = document.getElementById('senha');
-    if (nome.value != "admin"){
+    let nome = document.getElementById('email');
+    let senha = document.getElementById('senha');
+    let userCadastrados = ["admin",]
+    if (nome.value !== userCadastrados[0]){
         alert("Usuario nao Cadastrado")
     }
     else
-    if(senha.value != "admin"){
-        alert("Senha de invalida")
+    if(senha.value !== "admin"){
+        alert("Senha invalida ou nao informada")
     }
 
     else{
@@ -16,8 +17,8 @@ function login(){
     
 }
 /*---------------------------------------------*/  
-var btn = document.getElementById('botao')
-var container = document.getElementById("reg")
+let btn = document.getElementById('botao')
+let container = document.getElementById("reg")
 
 btn.addEventListener('click',function(){
     if( container.style.display === 'none'){
