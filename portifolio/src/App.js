@@ -1,11 +1,8 @@
-import Layout from "./Components/layout/layout"
-
+import Selector from "./components/SelectorPage";
 
 function App() {
   return (
-    <>
-    <Layout/>
-    </>
+    <Selector/>
   );
 }
 
