@@ -1,5 +1,5 @@
-import React from "react";
 import Finance from "../../IMG/Finance.png"
+import Labex from "../../IMG/labeX.png"
 
 const MockProjects = [
     {
@@ -8,9 +8,9 @@ const MockProjects = [
         link: "https://Controle-Finan.surge.sh",
     },
     {
-        photo: "https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=219",
-        tittle:"Projeto 02",
-        link: "Link ainda em criação",
+        photo: Labex,
+        tittle:"Labe-X",
+        link: "https://xxxxplausible-swing.surge.sh",
     },
     {
         photo: "https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=222",
@@ -22,7 +22,6 @@ const MockProjects = [
         tittle:"Projeto 04",
         link: "Link ainda em criação",
     },
-   
 ]
 
 export default MockProjects

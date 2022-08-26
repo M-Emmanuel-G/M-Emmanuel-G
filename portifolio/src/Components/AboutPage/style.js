@@ -45,4 +45,26 @@ export const MainAboutMeCamp = styled.div`
         font-size: 18px;
         margin-top: 50px;
     }
+    img{
+        width: 50px;
+        height: 50px;
+        margin: 20px 10px;
+        :hover{
+            transform: translateY(-10px);
+            transition: .2s ease-in-out;
+        }
+    }
+`
+export const MainText = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 60vh;
+    background: white;
+    text-align: center;
+    p{
+        color: black;
+    }
+    
 `

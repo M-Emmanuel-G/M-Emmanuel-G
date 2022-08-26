@@ -14,8 +14,7 @@ import styled from "styled-components";
         color: crimson;
     }
  `
-
- export const ProjectItens = styled.div`
+export const ProjectItens = styled.div`
     width: 60vw;
     height: 70vh;
     border: 1px solid black;
@@ -49,9 +48,10 @@ import styled from "styled-components";
       cursor: pointer;
       text-decoration: none;
       color: black;
+      font-weight: 400;
       :hover{
          transform: scale(1.2);
-         transition: .4s ease;
+         transition: .4s ease-in-out;
       }
     }
  `
