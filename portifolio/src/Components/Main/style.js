@@ -59,5 +59,6 @@ export const Icon = styled.div`
     height: 100%;
     background-image: url(${props => props.BackImage});
     background-size: cover;
-    animation: ${AnimPhoto} 3s ease  ;
+    animation: ${AnimPhoto} 3s ease-in-out;
+    border-radius: 50%;
 `

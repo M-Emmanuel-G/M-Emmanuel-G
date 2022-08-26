@@ -1,13 +1,14 @@
 import React from "react";
 import { Icon, MainContainer, MainDescription, MainPhoto, Photo } from "./style";
 import ImgPerfil from "../../IMG/perfil.png" 
+import ImgProfile from "../../IMG/profile.jpeg" 
 
 function Main (){
     return(
         <MainContainer>
             <MainPhoto>
                 <Photo>
-                    <Icon BackImage={ImgPerfil} />
+                    <Icon BackImage={ImgProfile} />
                 </Photo>
             </MainPhoto>
             <MainDescription>

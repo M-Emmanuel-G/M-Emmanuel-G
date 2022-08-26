@@ -6,14 +6,9 @@ import AboutPage from "./AboutPage";
 import ContactPage from "./contactPage";
 
 function Selector (){
-    const [ Projects, SetProjects ] = useState([
-        {titulo: "Projeto 1",},
-        {titulo: "Projeto 2",},
-        {titulo: "Projeto 3",}
-    ])
+    const [ Projects, SetProjects ] = useState([])
 
     return(
-        // <LayoutCont/>
         <BrowserRouter>
             <Routes>
                 <Route index element={
@@ -28,10 +23,6 @@ function Selector (){
                 <Route path="/Contato" element={<ContactPage/>}/>
             </Routes>
         </BrowserRouter>
-        // <ProjectPage
-        //     Projects = {Projects}
-        //     SetProjects = {SetProjects}
-        // />
     )
 }
 

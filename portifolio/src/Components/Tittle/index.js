@@ -14,7 +14,7 @@ function Tittle(props){
             <nav>
                 <li onClick={()=>{Navigate("/Projetos")}}>Projetos</li>
                 <li onClick={()=>{Navigate('/Contato')}}>Contato</li>
-                <li onClick={()=>{Navigate('/SobreMim')}}>Sobre Mim</li>
+                <li onClick={()=>{Navigate('/SobreMim')}}>Sobre</li>
             </nav>
         </TittleContainer>
     )
