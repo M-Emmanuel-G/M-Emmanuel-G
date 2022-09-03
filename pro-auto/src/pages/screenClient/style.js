@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ScreenClientCamp = styled.div`
     width: 100%;
     height: 90%;
-    background: green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,8 +10,7 @@ export const ScreenClientCamp = styled.div`
 
 export const InfoClientCamp = styled.div`
     width: 30vw;
-    height: 65vh;
-    border: 2px solid white;
+    height: 800px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -20,49 +18,70 @@ export const InfoClientCamp = styled.div`
     align-items: center;
     table{
         width: 100%;
-        height: 80%;
+        height: 70%;
         font-size: 20px;
         tr td{
-            background: red;
             width: 50px;
             height: 50px;
             text-align: center;
+            img{
+                width: 25px;
+                :hover{
+                transition: .4s;
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+            }
         }
         
     }
 `;
 export const TittleClient = styled.div`
     width: 100%;
-    height: 10%;
-    background: blue;
+    height: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-`
-export const ButtonCamp = styled.div`
-    width: 100%;
-    height: 10%;
-    background: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    button{
-        width: 150px;
-        height: 30px;
-        margin: 0 10px;
+    img{
+        position: relative;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        :hover{
+            transition: .4s;
+            transform: scale(1.2);
+            cursor: pointer;
+        }
     }
+    
 `
 
 export const InputEdit = styled.div`
  width: 100%;
- height: 50px;
- background: black;
+ height: 25%;
  display: flex;
  justify-content: center;
  align-items: center;
- display: none;
+ opacity: 0;
+ form{
+    display: flex;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        input{
+            width: 300px;
+            margin: 6px 0;
+        }
+    }
+    button{
+        width: 100px;
+        height: 50px;
+    }
+ }
+
  input{
-    width: 80%;
+    width: 100px;
     height: 20px;
     border-radius: 5px;
     ::placeholder{
@@ -73,6 +92,7 @@ export const InputEdit = styled.div`
  }
  button{
     margin: 0 10px;
- }
- 
+    position: relative;
+    left: 60px;
+ } 
 `
