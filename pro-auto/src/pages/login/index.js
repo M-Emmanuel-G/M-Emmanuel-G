@@ -16,6 +16,9 @@ export default function Login() {
         ev.preventDefault()
         localStorage.setItem("cpfCliente", inputCPF)
         localStorage.setItem("placaCliente", inputPlaca)
+<<<<<<< proAutoN
+        navigate("/telausuario") 
+
         
         
         data.forEach(client => {
@@ -36,6 +39,7 @@ export default function Login() {
         
         //     const token = data && data.map((c)=>{return c.token})
         //    console.log(token);     
+>>>>>>> master
     }
     return (
     <ContainerBase>
