@@ -1,10 +1,14 @@
 import Router from "./router";
+import { ClientContext } from "./context/context"
+import { useState } from "react";
 
 function App() {
+  const [renderClient, setRenderClient] = useState([])
+  
   return (
-    <div className="App">
+    <ClientContext.Provider value={{renderClient, setRenderClient}}>
       <Router/>
-    </div>
+    </ClientContext.Provider>
   );
 }
 
