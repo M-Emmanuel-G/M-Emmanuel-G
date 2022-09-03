@@ -14,7 +14,7 @@ export default function Login() {
     const sendLogin = ()=>{
         localStorage.setItem("cpfCliente", inputCPF)
         localStorage.setItem("placaCliente", inputPlaca)
-        navigate("/telausuario")
+        navigate("/telausuario") 
     }
     
     return (
