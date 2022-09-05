@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import backImage from '../../img/background.jpg'
 
 export const LoginCamp = styled.div`
     width: 100%;
@@ -6,15 +7,18 @@ export const LoginCamp = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(${backImage});
+    background-repeat: no-repeat;
+    background-size: cover;
 `;
 
 export const FormLogin = styled.form`
     display: flex;
     flex-direction: column;
     width: 30vw;
-    height: 65vh;
-    border: 2px solid black;
+    height: 70vh;
     border-radius: 10px;
+     background: rgba(1,1,1,0.2);
     h2{
         width: 100%;
         text-align: center;
@@ -43,9 +47,12 @@ export const FormLogin = styled.form`
             text-align: center;
             font-weight: bold;
             font-size: 20px;
+            color: white;
         }
         :focus{
             outline: 0;
+            border: 2px solid black;
+
         }
         :hover{
             border: 2px solid black;
@@ -56,7 +63,7 @@ export const FormLogin = styled.form`
         width: 100%;
         height: 30%;
         border-radius: 10px;
-        background: #191013;    
+        /* background: rgba(1,1,1,0.2);     */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -65,15 +72,27 @@ export const FormLogin = styled.form`
             width: 200px;
             height: 30px;
             border-radius: 10px;
-            background: #19f205;
-            border: none;
+            background: none;
+            border: 1px solid black;
             font-size: 19px;
             font-weight: bold;
             :hover{
+                background: #19f205;
                 transform: scale(1.1);
                 transition: .4s ease-in-out;
                 cursor: pointer;
             }
+        }
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 30px;
+            height: 30px;
+            margin: 10px 20px;
         }
     }
 `;

@@ -3,43 +3,32 @@ import HeaderContainer from '../../components/header/index';
 import { ContainerBase } from "../../style"
 import { FormLogin, LoginCamp } from './style';
 import {useNavigate} from "react-router-dom";
-import axios from 'axios';
 import useRequestData from "../../hooks/useRequestData"
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+import { useProtectPage } from '../../hooks/useProtectPage';
+import ImgFB  from "../../img/facebook.png"
+import ImgInsta  from "../../img/instagram.png"
 
 export default function Login() {
     const [ inputCPF, setInputCPF ] = useState("")
     const [ inputPlaca, setInputPlaca ] = useState("")
     const [ data ] = useRequestData("clients.json")
     const navigate = useNavigate()
+    const [ verify , setVerify ] = useState([])
+    useProtectPage()
 
     const sendLogin = (ev)=>{
         ev.preventDefault()
         localStorage.setItem("cpfCliente", inputCPF)
         localStorage.setItem("placaCliente", inputPlaca)
-<<<<<<< proAutoN
-        navigate("/telausuario") 
-
-        
-        
-        data.forEach(client => {
-            if(inputCPF === client.cpf && inputPlaca === client.placa){
-                navigate("/telausuario")
-                
-            }
-            else{ 
-                alert("Cliente nao encontrado...")
-            }
-        });
-         
-
-       
-        
-        
-        
-        
-        //     const token = data && data.map((c)=>{return c.token})
-        //    console.log(token);     
->>>>>>> master
+        const verify = data.filter(c=>c.cpf === localStorage.getItem("cpfCliente")).length
+        if(verify >= 1){
+            localStorage.setItem("token", "smakljcemlamnsoiaslçmnasjdnsakmmioqc") // simulando um token para proteção d apagina
+            navigate("/telausuario")
+        }else{
+            toast.error("Cliente não encontrado!")
+        }
     }
     return (
     <ContainerBase>
@@ -72,8 +61,13 @@ export default function Login() {
                     <button>Acessar</button>
                     {/* <button onClick={()=>{navigate("/telausuario")}}>Acessar</button> */}
                 </div>
+                <footer>
+                    <a href='https://pt-br.facebook.com/proautoprotecao/'><img src={ImgFB}/></a>
+                    <a href='https://www.instagram.com/proautoprotecao/'><img src={ImgInsta}/></a>
+                </footer>
             </FormLogin>
         </LoginCamp>
+        <ToastContainer/>
     </ContainerBase>
  );
 }
