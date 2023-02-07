@@ -9,7 +9,7 @@ export default function HomePage() {
     <Header/>
     <ContainerHomePage>
         <ContainerBanner>
-            <h1>Banner</h1>
+            <h1>Banneer</h1>
         </ContainerBanner>
         <ContainerWellcome><h1>WellCome</h1></ContainerWellcome>
     </ContainerHomePage>
