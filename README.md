@@ -6,7 +6,7 @@
   * Atualmente aprendendo NextJS e NextAuth
   * Proximo aprendizagem sera inglês
   * Meus pronomes são ele/dele
-  <div  class= flex justify-content:center align-items:center">
+  <div  style:" width="100%" background:#000">
     <img width="50%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErmt6yny-68EeCVOK4AUZUtkgyoNAtzmM6g&s"/>
   </div>
   <div>
