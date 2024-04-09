@@ -7,7 +7,7 @@
   * Proximo aprendizagem sera inglês
   * Meus pronomes são ele/dele
   <div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErmt6yny-68EeCVOK4AUZUtkgyoNAtzmM6g&s"/>
+    <img width="100%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTErmt6yny-68EeCVOK4AUZUtkgyoNAtzmM6g&s"/>
   </div>
   <div>
     <a href="https://github.com/M-Emmanuel-G/"/>
